@@ -1,0 +1,30 @@
+\documentclass{standalone}
+\usepackage{fontspec}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\setmainfont{Menlo} % default code font on macOS
+
+\begin{document}
+
+\begin{tikzpicture}[
+  , n/.style = {
+    , minimum width = 50mm
+    , minimum height = 25mm
+    , align = left
+    , shading = axis
+    , left color = NavyBlue!20!black
+    , right color = TealBlue!20!black
+    , shading angle = 60
+    , scale = 4
+  }
+  , outer sep = 0
+]
+  \node [n] {
+    \textcolor{LimeGreen}{\string\documentclass}\\[.2em]%
+    ~~\textcolor{Orange}{\{}%
+    \textcolor{Yellow}{\textbf{\underline{seuthesis2024b}}}%
+    \textcolor{Orange}{\}}%
+  };
+\end{tikzpicture}%
+
+\end{document}
