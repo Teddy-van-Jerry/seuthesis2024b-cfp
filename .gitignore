@@ -25,8 +25,8 @@
 .pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
-*.bbl
-*.bcf
+*.bbl*
+*.bcf*
 *.blg
 *-blx.aux
 *-blx.bib
@@ -299,3 +299,6 @@ TSWLatexianTemp*
 # option is specified. Footnotes are the stored in a file with suffix Notes.bib.
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
+
+# macOS
+.DS_Store

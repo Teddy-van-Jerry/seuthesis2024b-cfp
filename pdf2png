@@ -1,0 +1,4 @@
+#!/bin/sh
+
+convert -density 300 $1.pdf $1.png
+imageoptim $1.png
