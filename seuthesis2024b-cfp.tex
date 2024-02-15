@@ -13,8 +13,8 @@
 
 \setmainfont{TeX Gyre Termes}
 \setsansfont{TeX Gyre Heros}
-\setmonofont{Menlo}
-\setCJKmainfont{Source Han Serif SC}
+\setmonofont[Scale = MatchLowercase]{Menlo}
+\setCJKmainfont{Source Han Serif SC}[AutoFakeSlant]
 \setCJKsansfont{Source Han Sans SC}
 \setCJKmonofont{Source Han Mono SC}
 
@@ -26,7 +26,7 @@
 \newcommand\themeColor{seuGreen} % Brown, ForestGreen, Blue, Bittersweet
 \newcommand\secondColor{seuYellow}
 
-\shadowcolor{\themeColor!80!black}
+\shadowcolor{\themeColor!60!black}
 \shadowoffset{2.5pt}
 
 \newtcolorbox{warning}[1][]{enhanced,
@@ -96,7 +96,7 @@
         , outer sep = 0
       ]
         \node (title-name) [title name] {
-          \scalebox{1.5}{%
+          \scalebox{1.8}{%
             \ttfamily\large
             \textcolor{LimeGreen}{\string\documentclass}%
             \textcolor{Orange}{\{}%
@@ -122,16 +122,16 @@
     , minimum height = 10mm
     , fill = \themeColor
     , font = \color{gray!30}\small
-  ] at (current page.south west) {\copyright{} 2024 Wuqiong Zhao};
+  ] at (current page.south west) {\copyright{} 2024 \href{https://wqzhao.org}{\color{gray!30}Wuqiong Zhao}};
 \end{tikzpicture}
 
 \section{Template Usage}{模板使用}
 
-\texttt{seuthesis2024b} 模板使用最新 \LaTeX3 语法编写，需使用 \hologo{XeLaTeX} 编译。
+\texttt{seuthesis2024b} 模板使用最新 \LaTeX3 语法编写，需使用 \hologo{XeLaTeX} 引擎编译。
 模板已在 GitHub 开源：
 \href{https://github.com/Teddy-van-Jerry/seuthesis2024b}{\ttfamily github.com/Teddy-van-Jerry/seuthesis2024b}。
 此 \LaTeX{} 模板依照官方 MS Word 模板制作，功能支持包括：
-\textbf{图片}（含子图）、\textbf{表格}（含跨页表格），\textbf{参考文献}、\textbf{数学公式}、\textbf{注释}等，
+\textbf{图片}（含子图）、\textbf{表格}（含跨页表格），\textbf{参考文献}、\textbf{数学公式}、\textbf{脚注}、自动\textbf{PDF元数据}等，
 并提供\textbf{多种文档选项}供用户选择。
 使用此模板撰写毕业论文，可使论文格式更加规范，提高撰写效率！
 
@@ -140,8 +140,27 @@
   毕设论文具体格式要求请使用者\underLine{自行确认}。
 \end{warning}
 
+\section{Topics of Interest}{征集主题}
+\textbf{你的毕设选题}。包括但不局限于：
+\href{https://wqzhao.org/pub/zhao2023ompl}{智能反射表面（RIS）信道估计}、
+\href{https://wqzhao.org/pub/you2023beam}{波束与反射模式联合设计}、
+\href{https://wqzhao.org/pub/zhao2023flexible}{高层级综合（HLS）}、
+\href{https://wqzhao.org/pub/zhao2023automatic}{硬件自动生成语言设计}。
+% \textcolor{\secondColor}{（此处夹带私货）}
+
+\section{Submission Procedure}{投稿流程}
+
+请使用东南大学毕业设计（论文）智能管理平台 \href{https://bysj.seu.edu.cn}{\ttfamily bysj.seu.edu.cn} 提交论文。
+此 \LaTeX{} 模板使用流程可参考 \href{https://github.com/Teddy-van-Jerry/seuthesis2024b}{GitHub 仓库}相关说明。
+推荐使用 \texttt{latexmk} 工具编译或 Overleaf 平台。
+
 \section{Important Dates}{重要日期}
 
 请参考东南大学教务处和各学院通知。
+
+\section{Contact}{联系方式}
+
+\noindent
+\textbf{General Chair}: Wuqiong Zhao, \textit{Southeast University, China} (e-mail: \href{mailto:me@wqzhao.org}{\ttfamily wqzhao.org@seu.edu.cn})
 
 \end{document}
